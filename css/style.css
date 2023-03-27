@@ -1,0 +1,317 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Libre Franklin", sans-serif;
+  line-height: 1;
+  color: hsl(0, 0%, 59%);
+
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  margin: 0 auto;
+
+  box-sizing: border-box;
+  /* background: url(../images/bg-pattern-top.svg),
+    hsl(185, 75%, 39%) url(../images/bg-pattern-top.svg);
+  background-size: contain;
+  background-position: right 52vw bottom 35vh, left 48vw top 52vh;
+  background-repeat: no-repeat; */
+}
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/**************************/
+/* BELOW 1440px (desktop) */
+/**************************/
+@media (max-width: 144em) {
+  .section__coming-soon {
+    padding: 4.8rem 0;
+  }
+  .coming-soon {
+    max-width: 100rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8rem;
+
+    align-items: center;
+  }
+  .text-box {
+    text-align: center;
+  }
+  .logo {
+    margin: auto;
+    margin-bottom: 4rem;
+  }
+  .heading-primary {
+    font-size: 4.8rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+  }
+  strong {
+    color: hsl(209, 33%, 12%);
+  }
+  .subscribe {
+    font-size: 2rem;
+    color: hsl(209, 33%, 12%);
+    margin-bottom: 4rem;
+  }
+  .subscription-box {
+    display: grid;
+    grid-template-columns: 3fr 1.5fr;
+    column-gap: 1.2rem;
+    padding: 0 7rem;
+  }
+  .error-state {
+    position: relative;
+
+    display: grid;
+    grid-template-columns: 3fr 1.5fr;
+    column-gap: 1.2rem;
+    padding: 0 7rem;
+  }
+  .input {
+    width: 100%;
+    padding: 1.4rem 3rem;
+    font-size: 1.6rem;
+    font-family: inherit;
+    color: inherit;
+    border: 1px solid hsl(223, 100%, 88%);
+    border-radius: 30px;
+  }
+  .btn {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 1.4rem 3rem;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    transition: all 0.3s;
+    background-color: hsl(223, 87%, 63%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: 0rem 0rem 2.5rem 0.3rem hsla(223, 87%, 63%, 0.247);
+  }
+  .btn:hover {
+    background-color: hsl(223, 87%, 63%, 0.8);
+  }
+  .warning-text {
+    font-size: 1.4rem;
+    color: hsl(354, 100%, 66%);
+    padding: 1rem 2rem;
+
+    text-align: left;
+    font-style: italic;
+    display: none;
+  }
+  .error-state p {
+    font-size: 1.4rem;
+    color: hsl(354, 100%, 66%);
+    padding: 1rem 0;
+
+    text-align: left;
+    font-style: italic;
+    display: block;
+  }
+  .error-state input {
+    outline: none;
+    border: hsl(354, 100%, 66%) 1px solid;
+  }
+  .error-state input::placeholder {
+    color: hsl(354, 100%, 66%);
+  }
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero-img {
+    width: 80rem;
+  }
+  .footer {
+    padding: 0 0 4rem 0;
+  }
+  .social-media-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+  }
+  .social-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2.4rem;
+    position: relative;
+  }
+  .footer-link {
+    color: hsl(223, 87%, 63%);
+    border: 1px solid hsl(223, 100%, 88%);
+    border-radius: 50%;
+    padding: 0.5rem;
+    display: inline-block;
+    width: 4rem;
+    height: 4rem;
+  }
+  .footer-link:hover {
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(223, 87%, 63%);
+    border: 1px solid hsl(223, 87%, 63%);
+  }
+  .icon {
+    width: 1.8rem;
+    height: 1.8rem;
+    position: absolute;
+    transform: translate(-50%, -50%);
+  }
+
+  .icon-1 {
+    top: 50%;
+    left: 12%;
+  }
+  .icon-2 {
+    top: 50%;
+    left: 50%;
+  }
+  .icon-3 {
+    top: 50%;
+    left: 88%;
+  }
+  .copyright {
+    font-size: 1.4rem;
+  }
+}
+/**************************/
+/* BELOW 375px (mobile) */
+/**************************/
+
+@media (max-width: 24em) {
+  .coming-soon {
+    padding: 0 2rem;
+  }
+  .logo {
+    width: 15%;
+  }
+  .heading-primary {
+    font-size: 2.6rem;
+  }
+  .subscribe {
+    font-size: 1.6rem;
+  }
+  .subscription-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1.2rem;
+    padding: 0 2rem;
+  }
+  .error-state {
+    position: relative;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1.2rem;
+    padding: 0 2rem;
+  }
+  .input {
+    font-size: 1.4rem;
+  }
+  .btn {
+    font-size: 1.4rem;
+  }
+
+  .warning-text {
+    font-size: 1.4rem;
+    color: hsl(354, 100%, 66%);
+    padding: 1rem 2rem;
+
+    text-align: center;
+    font-style: italic;
+    display: none;
+  }
+  .error-state p {
+    font-size: 1.4rem;
+    color: hsl(354, 100%, 66%);
+    padding: 1rem 0;
+    grid-row: 2;
+    text-align: center;
+    font-style: italic;
+    display: block;
+  }
+  .error-state input {
+    outline: none;
+    border: hsl(354, 100%, 66%) 1px solid;
+  }
+  .error-state input::placeholder {
+    color: hsl(354, 100%, 66%);
+  }
+  .hero {
+    margin-bottom: 8rem;
+  }
+  .social-media-box {
+    gap: 1.2rem;
+  }
+  .social-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+    position: relative;
+  }
+  .footer-link {
+    color: hsl(223, 87%, 63%);
+    border: 1px solid hsl(223, 100%, 88%);
+    border-radius: 50%;
+    padding: 0.5rem;
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+  }
+  .footer-link:hover {
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(223, 87%, 63%);
+    border: 1px solid hsl(223, 87%, 63%);
+  }
+  .icon {
+    width: 1.4rem;
+    height: 1.4rem;
+    position: absolute;
+    transform: translate(-50%, -50%);
+  }
+  .icon-1 {
+    top: 50%;
+    left: 14%;
+  }
+  .icon-2 {
+    top: 50%;
+    left: 50%;
+  }
+  .icon-3 {
+    top: 50%;
+    left: 87%;
+  }
+  .copyright {
+    font-size: 1.2rem;
+  }
+}
